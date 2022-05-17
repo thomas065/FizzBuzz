@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1d5888;
-    --secondary-color: #ff993b;
-    --dark-color: #080808;
+    --secondary-color: blue;
+    --dark-color: rgb(35, 111, 210);
     --white-color: #dff3e4;
 }
 
@@ -37,7 +37,7 @@ footer .social>a {
 
 footer .social>a:hover {
     opacity: 0.9;
-    color: var(--secondary-color);
+    color: red;
 }
 
 .bsicon {
@@ -57,7 +57,7 @@ footer .social>a:hover {
 }
 
 .checklist>li i {
-    color: var(--secondary-color);
+    color: red;
 }
 
 code[class*="language-"],
@@ -70,4 +70,21 @@ pre[class*="language-"] {
 main>.container {
     padding: 60px 15px 0;
     margin-bottom: 5rem;
+}
+
+.logoFont {
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.Fizz {
+    color: darkgreen;
+}
+
+.Buzz {
+    color: darkblue;
+}
+
+.FizzBuzz {
+    color: red;
+    font-weight: bold;
 }

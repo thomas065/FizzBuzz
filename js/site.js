@@ -29,26 +29,11 @@ function fizzBuzz(fizzValue, buzzValue) {
 
     let returnArray = [];
 
-    //write a loop from 1 to 100
+    //write a loop from 1 to 100 (MIC DROP!!!)
+    
     for (let i = 1; i <= 100; i++) {
-        //check the current value if in three steps
-        //check to see if divisible by both (3 and 5)
-        //if so push 'FizzBuzz' into the array and not the number
-        if (i % fizzValue == 0 && i % buzzValue == 0) {
-            returnArray.push("FizzBuzz");
-        } else if (i % fizzValue == 0) {
-            //check to see if divisible by fizzValue (3)
-            //if so push 'Fizz' into the array and not the number
-            returnArray.push("Fizz");
-        } else if (i % buzzValue == 0) {
-            //check to see if divisible by buzzValue (5)
-            //if so push 'Buzz' into the array and not the number
-            returnArray.push("Buzz");
-        } else {
-            //if none then push the number into the array
-            //returnArray;
-            returnArray.push(i);
-        }
+        let value = ((i % fizzValue == 0 ? 'Fizz' : "") + (i % buzzValue == 0 ? 'Buzz' : "") || i)
+        returnArray.push(value);
     }
     return returnArray;
 }
